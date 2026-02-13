@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+h1, h2, h3{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+p {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(252, 248, 250);
+}
+.container {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.date-buttons {
+  display: flex;
+  justify-content: center; /* moves buttons to the middle */
+  gap: 16px;               /* space between the buttons */
+  margin-top: 20px;        /* optional: space from text above */
+}
+
+.button {
+  display: inline-block;
+  background-color: hotpink;
+  color: aliceblue;
+  padding: 10px 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: background-color 0.3s;
+  font-size: large;
+}
+
+.button:hover {
+  background-color: hotpink;
+}
+
+.button2 {
+  display: inline-block;
+  background-color: hotpink;
+  color: aliceblue;
+  padding: 10px 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: background-color 0.3s;
+  font-size: x-large;
+}
+
+.button2:hover {
+  background-color: hotpink;
+}
+
+.button3 {
+  display: inline-block;
+  background-color: hotpink;
+  color: aliceblue;
+  padding: 10px 70px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: background-color 0.3s;
+  font-size: xx-large;
+}
+
+.button3:hover {
+  background-color: hotpink;
+}
+
+.button4 {
+  display: inline-block;
+  background-color: hotpink;
+  color: aliceblue;
+  padding: 5px 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: background-color 0.3s;
+  font-size: xx-small;
+}
+
+.button4:hover {
+  background-color: hotpink;
+}
+
+/* .widget-layout-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; 
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+/* PROMOTION CARD*/
+.promo-card {
+  flex: 1; 
+  min-width: 200px;
+  min-height: 600px;
+  background-image: url('images/cat_pancee.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+ /* Styling the container */
+  height: 400px; 
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  overflow: hidden; 
+  
+  /* Positioning the text inside */
+  display: flex;
+  align-items: flex-end; 
+}
+
+.promo-text-content {
+  width: 100%;
+  padding: 10px;
+  /* Semi-transparent overlay for text readability */
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: #252525;
+}
+
+/* .promo-text-content h3 {
+  margin-top: 0;
+  color: #f8f6f5; 
+} */
+
+.promo-text-content p {
+  margin-bottom: 15px;
+}
+
+.widget {
+  background: #171717;       
+  padding: 50px 50px;      
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  max-width: 1400px;
+  margin: 80px auto;       
+}
+
+.widget-layout-container {
+  display: flex;
+  align-items: stretch;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.widget h1,h2,h3 {
+  margin-bottom: 1rem;
+  color: hotpink;
+}
+
+.widget p {
+  color: #000000;
+}
+
+/* .social-media-feed {
+  display: grid;
+  text-align: left;
+  columns: 200px 2;
+  column-gap: 30px;
+  padding: 25px;
+} */
+
+.social-media-feed {
+  flex: 1;
+  background: #fcfbfb;        /* card color */
+  border-radius: 16px;
+  padding: 40px 40px;         /* ← THIS is the space you want */
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px) {
+  .widget-layout-container {
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center;
+  }
+  
+  .promo-card, .social-media-feed {
+    min-width: 90%; 
+  }
+}
